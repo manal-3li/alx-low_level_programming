@@ -1,52 +1,31 @@
 #include "main.h"
-#include <math.h>
-#include <stdio.h>
 
 /**
- * largest_prime - gets the largest prime number
- *
- * @num: number checked
+ * print_triangle - a function that prints a triangle, followed by a new line.
+ * @size: size of the triangle
  */
-void largest_prime(long int num)
+
+void print_triangle(int size)
 {
-	int i, prime;
+	int i, j, k;
 
-	/* To get all the least number that is not a multiple of 2 */
-	/* Since any number divided by 2 is even */
-	while (num % 2 == 0)
+	if (size <= 0)
 	{
-		prime = 2;
-		num /= 2;
+		_putchar('\n');
 	}
-
-	/* n is now an odd number */
-	/* square root of n is used so that we loop through all the */
-	/* multiples that are not duplicate ie. 49 = 7 x 7 */
-	for (i = 3; i <= sqrt(num); i += 2)
+	else
 	{
-		while (num % i == 0)
+		for (i = 1; i <= size; i++)
 		{
-			num /= i;
-			prime = i;
+			for (j = 0; j < (size - i); j++)
+			{
+				_putchar(' ');
+			}
+			for (k = 0; k < i; k++)
+			{
+				_putchar(35);
+			}
+			_putchar('\n');
 		}
 	}
-
-	if (num > 2)
-		prime = num;
-
-	printf("%d", prime);
-}
-
-/**
- * main - a program that finds and prints the largest
- * prime factor of the number 612852475143, followed by a new line.
- *
- * Return: 0 (success)
- */
-int main(void)
-{
-	largest_prime(612852475143);
-	printf("\n");
-
-	return (0);
 }
