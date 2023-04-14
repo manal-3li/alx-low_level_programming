@@ -1,5 +1,3 @@
-
-@@ -0,0 +1,51 @@
 #include <stdlib.h>
 #include "main.h"
 
