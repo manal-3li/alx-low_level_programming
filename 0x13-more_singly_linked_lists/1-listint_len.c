@@ -9,17 +9,17 @@
  */
 size_t listint_len(const listint_t *h)
 {
-    if (h == NULL) {
-        return 0;
-    }
-    
-    size_t nnodes = 1;
-    const listint_t *node = h->next;
+if (h == NULL)
+{
+return (0);
+}
+size_t nnodes = 1;
+const listint_t *node = h->next;
 
-    while (node != NULL) {
-        nnodes++;
-        node = node->next;
-    }
-
-    return (nnodes);
+while (node != NULL)
+{
+nnodes++;
+node = node->next;
+}
+return (nnodes);
 }
