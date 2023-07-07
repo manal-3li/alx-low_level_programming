@@ -1,5 +1,1 @@
-int _putchar(char c)
-{
-    /* TODO: Implement function */
-return (0);
-}
+int _putchar(char c);
