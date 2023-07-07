@@ -1,4 +1,4 @@
-include < stdio.h >
+include <stdio.h>
 
 /**
 * main - program to prints its name, followed by a new line
