@@ -2,9 +2,9 @@
 
 /**
 * main - program should print a number, followed by a new line
-* @argc:int
-* @argv:pointer
-* Return:0
+* @argc:number of command line
+* @argv:pointer to an array of command line
+* Return:0-success, non-zero-fail.
 */
 
 int main(int argc, char **argv)
