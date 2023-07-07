@@ -1,1 +1,1 @@
-(0000000000000000) T _putchar
+int _putchar(char c);
