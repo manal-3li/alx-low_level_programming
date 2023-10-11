@@ -1,13 +1,12 @@
-#include <stdio.h>
-#include "funcrion_pointers.h"
-
 /**
- * print_name - print a name
- * @name: string name
- * @f: printing function pointer
+ * print_name - function to print name
  *
- * Return: void.
- */
+ * @name: name to print
+ * @f: function pointer that doesn't return anything
+ *
+ * Return: Always 0 (Success)
+*/
+
 void print_name(char *name, void (*f)(char *))
 {
 	if (name && f)
